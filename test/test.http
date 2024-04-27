@@ -4,6 +4,12 @@ post http://localhost:8000/
 Content-Type: application/json
 
 {
-    "title": "prisma-tutorial",
-    "body": "PrismaはRDBで使える便利なORMです"
+    "title": "shincode",
+    "body": "shincodeチュートリアルです"
 }
+
+### get
+get http://localhost:8000/
+
+### get
+get http://localhost:8000/2

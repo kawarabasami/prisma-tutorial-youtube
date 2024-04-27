@@ -8,6 +8,18 @@ app.use(express.json());
 
 const prisma = new PrismaClient();
 
+app.get('/', async (req, res) => {
+  const posts = await prisma.posts.findMany();
+  return res.json(posts);
+});
+
+app.get('/:id', async (req, res) => {
+  const posts = await prisma.posts.findUnique({
+    where: { id: Number(req.params.id) }
+  });
+  return res.json(posts);
+});
+
 app.post('/', async (req, res) => {
   const { title, body } = req.body;
   const posts = await prisma.posts.create({
