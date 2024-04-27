@@ -22,3 +22,12 @@ Content-Type: application/json
     "title": "shincode2",
     "body": "shincodeチュートリアルです2"
 }
+
+### delete
+delete http://localhost:8000/2
+Content-Type: application/json
+
+{
+    "title": "shincode2",
+    "body": "shincodeチュートリアルです2"
+}

@@ -45,6 +45,15 @@ app.put('/:id', async (req, res) => {
   return res.json(updatedPosts);
 });
 
+app.delete('/:id', async (req, res) => {
+  const posts = await prisma.posts.delete({
+    where: {
+      id: Number(req.params.id)
+    }
+  });
+  return res.json(posts);
+});
+
 app.listen(PORT, () => {
   console.log('サーバが起動中...');
 });
