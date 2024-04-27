@@ -13,7 +13,7 @@
     "editor.formatOnSave": true,
     // ファイル保存時にESLIntが実行される。
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
+        "source.fixAll.eslint": "explicit"
     },
     "typescript.tsdk": "node_modules\\typescript\\lib",
 }

@@ -1,0 +1,9 @@
+### create ※expressではcontent-typeの設定をしないとjsonパースできないため注意
+
+post http://localhost:8000/
+Content-Type: application/json
+
+{
+    "title": "prisma-tutorial",
+    "body": "PrismaはRDBで使える便利なORMです"
+}
