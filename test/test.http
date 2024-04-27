@@ -13,3 +13,12 @@ get http://localhost:8000/
 
 ### get
 get http://localhost:8000/2
+
+### put
+put http://localhost:8000/2
+Content-Type: application/json
+
+{
+    "title": "shincode2",
+    "body": "shincodeチュートリアルです2"
+}
